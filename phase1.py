@@ -3,7 +3,6 @@
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
-
 embedding = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")   #convert the text into number
 
 vectorstore = Chroma(                     #for storing the bots personality in database

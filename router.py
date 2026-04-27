@@ -3,7 +3,7 @@
 from phase1 import vectorstore
 
 def route(post_content, threshold=0.5):             #this function tells which bot post is best
-    results = vectorstore.search_score(post_content)     #compare the database to users posts return score
+    results = vectorstore.similarity_search_with_score(post_content)     #compare the database to users posts return score
 
     matched_bots = []                        # make empty list where matching bots stores
 
